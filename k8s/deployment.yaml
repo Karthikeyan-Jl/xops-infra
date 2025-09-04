@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xops-app
+  labels:
+    app: xops-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xops-app
+  template:
+    metadata:
+      labels:
+        app: xops-app
+    spec:
+      containers:
+      - name: xops-app
+        image: DOCKER_USERNAME/xops-app:latest
+        ports:
+        - containerPort: 80
