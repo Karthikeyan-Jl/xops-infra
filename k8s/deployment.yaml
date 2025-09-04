@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: xops-app
-        image: teujksdf/xops-app:60571b4c483c2dfd9a2b119b589014c958a8cd8c
+        image: teujksdf/xops-app:ca4d93f5b7e327b1e258625eb509836538bda6fd
         ports:
         - containerPort: 80
